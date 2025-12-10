@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Internship Report</title>
-    <link>http://github.com/VuNguyenBinh/aws-intern-report/en/categories/</link>
+    <link>https://minhDuong27.github.io/fcj-workshop2/en/categories/</link>
     <description>Recent content in Categories on Internship Report</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="http://github.com/VuNguyenBinh/aws-intern-report/en/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://minhDuong27.github.io/fcj-workshop2/en/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
