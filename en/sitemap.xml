@@ -79,32 +79,6 @@
                 href="http://localhost:1313/fcj-workshop2/1-worklog/1.1-week1/"
                 />
   </url><url>
-    <loc>http://localhost:1313/fcj-workshop2/5-workshop/5.5-closed-loop-devsecops/</loc>
-    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="http://localhost:1313/fcj-workshop2/vi/5-workshop/5.5-closed-loop-devsecops/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/fcj-workshop2/5-workshop/5.5-closed-loop-devsecops/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/fcj-workshop2/5-workshop/5.4-lambda-and-notification/</loc>
-    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="http://localhost:1313/fcj-workshop2/vi/5-workshop/5.4-lambda-and-notification/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/fcj-workshop2/5-workshop/5.4-lambda-and-notification/"
-                />
-  </url><url>
     <loc>http://localhost:1313/fcj-workshop2/5-workshop/5.2-pipline-flow/</loc>
     <lastmod>2025-12-01T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -116,19 +90,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/fcj-workshop2/5-workshop/5.2-pipline-flow/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/fcj-workshop2/5-workshop/5.3-sonarqube-analysis/</loc>
-    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="http://localhost:1313/fcj-workshop2/vi/5-workshop/5.3-sonarqube-analysis/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/fcj-workshop2/5-workshop/5.3-sonarqube-analysis/"
                 />
   </url><url>
     <loc>http://localhost:1313/fcj-workshop2/4-eventparticipated/4.2-event2/</loc>
@@ -183,6 +144,19 @@
                 href="http://localhost:1313/fcj-workshop2/1-worklog/1.2-week2/"
                 />
   </url><url>
+    <loc>http://localhost:1313/fcj-workshop2/5-workshop/5.3-sonarqube-analysis/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/fcj-workshop2/vi/5-workshop/5.3-sonarqube-analysis/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/fcj-workshop2/5-workshop/5.3-sonarqube-analysis/"
+                />
+  </url><url>
     <loc>http://localhost:1313/fcj-workshop2/4-eventparticipated/4.3-event3/</loc>
     <lastmod>2025-11-29T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -235,6 +209,19 @@
                 href="http://localhost:1313/fcj-workshop2/3-blogstranslated/"
                 />
   </url><url>
+    <loc>http://localhost:1313/fcj-workshop2/5-workshop/5.4-lambda-and-notification/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/fcj-workshop2/vi/5-workshop/5.4-lambda-and-notification/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/fcj-workshop2/5-workshop/5.4-lambda-and-notification/"
+                />
+  </url><url>
     <loc>http://localhost:1313/fcj-workshop2/1-worklog/1.4-week4/</loc>
     <lastmod>2025-09-29T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -259,6 +246,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/fcj-workshop2/4-eventparticipated/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/fcj-workshop2/5-workshop/5.5-closed-loop-devsecops/</loc>
+    <lastmod>2025-12-01T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="http://localhost:1313/fcj-workshop2/vi/5-workshop/5.5-closed-loop-devsecops/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/fcj-workshop2/5-workshop/5.5-closed-loop-devsecops/"
                 />
   </url><url>
     <loc>http://localhost:1313/fcj-workshop2/5-workshop/</loc>

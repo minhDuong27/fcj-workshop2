@@ -42,32 +42,11 @@
 	"content": "Mục tiêu Tuần 1: Kết nối và làm quen với các thành viên của First Cloud Journey. Hiểu các dịch vụ cơ bản của AWS, cách sử dụng AWS Management Console và AWS CLI. Tạo một tài khoản AWS. Xem video hướng dẫn cài đặt Hugo, Git, VSCode. Học cách viết Markdown, học cách sử dụng Hugo. Thực hành các lab trong First Cloud Journey. Các công việc cần thực hiện trong tuần: Ngày Nhiệm vụ Ngày bắt đầu Ngày hoàn thành Tài liệu tham khảo 2 Làm quen với các thành viên FCJĐọc và ghi chú lại quy định của đơn vị thực tập 08/09/2025 08/09/2025 3 Tìm hiểu về AWS và các loại dịch vụ:ComputeStorageNetworkingDatabase 09/09/2025 09/09/2025 CloudJourney 4 Tạo tài khoản AWS Free TierHọc về AWS Console \u0026amp; AWS CLIThực hành:Tạo tài khoản AWSCài đặt \u0026amp; cấu hình AWS CLICách sử dụng AWS CLI 10/09/2025 10/09/2025 AWS Account Setup 5 Học cách viết Markdown và sử dụng Hugo 11/09/2025 11/09/2025 YouTube Guide 6 Thực hành:Làm các lab trong First Cloud Journey 12/09/2025 12/09/2025 First Cloud Journey Thành tựu Tuần 1: Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản:\nCompute Storage Networking Database Đã tạo và cấu hình thành công một tài khoản AWS Free Tier.\nLàm quen với AWS Management Console, biết cách tìm kiếm, truy cập và sử dụng dịch vụ thông qua giao diện web.\nĐã cài đặt và cấu hình thành công AWS CLI trên máy tính, bao gồm:\nAccess Key Secret Key Default Region Cài đặt thành công Hugo, Git và VSCode:\nBiết cách sử dụng Hugo, Git và VSCode.\nBiết cách viết Markdown và đã viết thành công Worklog Tuần 1.\n"
 },
 {
-	"uri": "http://localhost:1313/fcj-workshop2/vi/5-workshop/5.5-closed-loop-devsecops/",
-	"title": "Closed-loop-devsecops",
-	"tags": [],
-	"description": "",
-	"content": "DevSecOps Feedback Loop (Closed Cycle) Hệ thống tạo ra một vòng lặp DevSecOps khép kín: Dev commit code → GitLab ↓ CodePipeline chạy → CodeBuild quét → SonarQube phân tích ↓ Webhook → Lambda → SNS gửi email ↓ Dev nhận lỗi → Fix → Commit lại ↓ Quay lại vòng lặp\nLợi ích chính Tự động phát hiện bug và lỗ hổng bảo mật. Cảnh báo real-time giúp dev sửa ngay. Bảo đảm chất lượng code xuyên suốt vòng đời phát triển. Văn hóa DevSecOps được áp dụng thực tế: “Security shift-left”. Kết luận Pipeline đảm bảo một quy trình phát triển hiện đại, tự động, bảo mật và bền vững. Mỗi commit đều được phân tích nghiêm ngặt, giúp đội dev luôn duy trì chuẩn chất lượng cao.\n"
-},
-{
-	"uri": "http://localhost:1313/fcj-workshop2/vi/5-workshop/5.4-lambda-and-notification/",
-	"title": "Lambda-and-notification",
-	"tags": [],
-	"description": "",
-	"content": "Lambda Processing + Notification API Gateway → Lambda API Gateway nhận webhook từ SonarQube và chuyển payload cho Lambda.\nLambda thực hiện:\nParse dữ liệu từ SonarQube. Format message (project, loại lỗi, mức độ nghiêm trọng). Gửi nội dung sang SNS topic. SNS Notifications SNS gửi email đến nhóm dev:\nBáo lỗi bảo mật. Báo lỗi code. Báo fail Quality Gate. Link trực tiếp tới dashboard SonarQube. Lợi ích:\nDev biết lỗi ngay lập tức. Giảm thời gian debug. Tăng chất lượng và tính an toàn của phần mềm. "
-},
-{
 	"uri": "http://localhost:1313/fcj-workshop2/vi/5-workshop/5.2-pipline-flow/",
 	"title": "Pipline-flow",
 	"tags": [],
 	"description": "",
 	"content": "CodePipeline Flow (GitLab → AWS) 1. Source Stage CodePipeline được cấu hình lắng nghe commit từ GitLab (branch: main). Khi có commit mới, pipeline tự động kích hoạt. Output: source artifact để truyền sang bước build. 2. Build Stage (CodeBuild) Chạy môi trường build theo buildspec.yml. Thực thi: Cài Sonar Scanner. Quét toàn bộ source code. Gửi kết quả sang SonarQube Server. Nếu build fail → pipeline dừng. 3. Post-Build Actions CodeBuild đẩy metadata build (log, status) về CodePipeline. Notify optional: Amazon EventBridge / SNS / Slack. "
-},
-{
-	"uri": "http://localhost:1313/fcj-workshop2/vi/5-workshop/5.3-sonarqube-analysis/",
-	"title": "Sonarqube-analysis",
-	"tags": [],
-	"description": "",
-	"content": "SonarQube Analysis Architecture Sonar Scanner → SonarQube Trong giai đoạn build, Sonar Scanner thực hiện:\nPhân tích chất lượng code. Phát hiện bug. Phát hiện lỗ hổng bảo mật (Security Hotspots, Vulnerabilities). Tính toán code smell, độ phức tạp, duplication. Kết quả được gửi tới:\nSonarQube Server (EC2) SonarQube xử lý, lưu kết quả vào database của nó. Webhook Trigger Khi quá trình phân tích hoàn tất:\nSonarQube gọi HTTP POST tới API Gateway endpoint. Payload chứa: Tên project Trạng thái Quality Gate (Pass/Fail) Summary lỗi (bugs, vulnerabilities, code smells,…) "
 },
 {
 	"uri": "http://localhost:1313/fcj-workshop2/vi/4-eventparticipated/4.2-event2/",
@@ -98,6 +77,13 @@
 	"content": "Week 2 Objectives: Nắm toàn bộ nội dung Module 01. Hiểu hạ tầng AWS và các công cụ quản lý dịch vụ. Thực hành tối ưu chi phí với AWS Budgets. Hoàn thành lab tài khoản IAM và Billing. Làm quen AWS Support. Tasks to be carried out this week: Day Task Start End Reference 2 Module 01-04: Global InfrastructureModule 01-05: Service Management 15/09 15/09 FCJ Module 01 3 Module 01-06: Cost OptimizationLab 07-01 → 07-03 16/09 16/09 FCJ Lab 07 4 Lab 07-04 → 07-06Tạo Cost/Usage/Savings Budget 17/09 17/09 AWS Billing 5 Lab 01-01 → 01-04 (IAM) 18/09 18/09 FCJ Lab 01 6 Tìm hiểu AWS Support PlansTạo support case mẫu 19/09 19/09 AWS Support Docs Week 2 Achievements: Hiểu rõ hạ tầng AWS (Region, AZ…) Quản lý chi phí tốt hơn thông qua AWS Budgets. Thành thạo lab IAM cơ bản. Nắm quy trình AWS Support. "
 },
 {
+	"uri": "http://localhost:1313/fcj-workshop2/vi/5-workshop/5.3-sonarqube-analysis/",
+	"title": "Sonarqube-analysis",
+	"tags": [],
+	"description": "",
+	"content": "SonarQube Analysis Architecture Sonar Scanner → SonarQube Trong giai đoạn build, Sonar Scanner thực hiện:\nPhân tích chất lượng code. Phát hiện bug. Phát hiện lỗ hổng bảo mật (Security Hotspots, Vulnerabilities). Tính toán code smell, độ phức tạp, duplication. Kết quả được gửi tới:\nSonarQube Server (EC2) SonarQube xử lý, lưu kết quả vào database của nó. Webhook Trigger Khi quá trình phân tích hoàn tất:\nSonarQube gọi HTTP POST tới API Gateway endpoint. Payload chứa: Tên project Trạng thái Quality Gate (Pass/Fail) Summary lỗi (bugs, vulnerabilities, code smells,…) "
+},
+{
 	"uri": "http://localhost:1313/fcj-workshop2/vi/4-eventparticipated/4.3-event3/",
 	"title": "Event 3",
 	"tags": [],
@@ -126,6 +112,13 @@
 	"content": "Tại đây sẽ là phần liệt kê, giới thiệu các blogs mà các bạn đã dịch. Ví dụ:\nBlog 1 - Sử dụng Large Language Models trên Amazon Bedrock cho Thực thi Tác vụ Đa bước Blog 2 - Cập nhật phương pháp Carbon cho Công cụ Dấu Chân Carbon của Khách Hàng AWS (CCFT) Blog 3 - Sử dụng thông tin tham chiếu dịch vụ AWS để tự động hóa luồng công việc quản lý chính sách "
 },
 {
+	"uri": "http://localhost:1313/fcj-workshop2/vi/5-workshop/5.4-lambda-and-notification/",
+	"title": "Lambda-and-notification",
+	"tags": [],
+	"description": "",
+	"content": "Lambda Processing + Notification API Gateway → Lambda API Gateway nhận webhook từ SonarQube và chuyển payload cho Lambda.\nLambda thực hiện:\nParse dữ liệu từ SonarQube. Format message (project, loại lỗi, mức độ nghiêm trọng). Gửi nội dung sang SNS topic. SNS Notifications SNS gửi email đến nhóm dev:\nBáo lỗi bảo mật. Báo lỗi code. Báo fail Quality Gate. Link trực tiếp tới dashboard SonarQube. Lợi ích:\nDev biết lỗi ngay lập tức. Giảm thời gian debug. Tăng chất lượng và tính an toàn của phần mềm. "
+},
+{
 	"uri": "http://localhost:1313/fcj-workshop2/vi/1-worklog/1.4-week4/",
 	"title": "Week 4 Worklog",
 	"tags": [],
@@ -138,6 +131,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Trong phần này, các bạn cần liệt kê và mô tả chi tiết các sự kiện (event) mà mình đã tham gia trong suốt quá trình thực tập hoặc làm việc.\nMỗi sự kiện nên được trình bày theo định dạng Event 1, Event 2, Event 3…, kèm theo các thông tin:\nTên sự kiện Thời gian tổ chức Địa điểm (nếu có) Vai trò của bạn trong sự kiện (người tham dự, hỗ trợ tổ chức, diễn giả, v.v.) Mô tả ngắn gọn nội dung và hoạt động chính trong sự kiện Kết quả hoặc giá trị đạt được (bài học, kỹ năng mới, đóng góp cho nhóm/dự án) Việc liệt kê này giúp thể hiện rõ sự tham gia thực tế của bạn, cũng như các kỹ năng mềm và kinh nghiệm bạn đã tích lũy qua từng sự kiện. Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.\nEvent 1 Tên sự kiện: AI/ML/GenAI on AWS\nThời gian: 8:30 AM – 12:00 PM, Thứ Bảy, ngày 15/11/2025\nĐịa điểm: Tầng 36, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh\nVai trò trong sự kiện: Người tham dự\nEvent 2 Tên sự kiện: DevOps on AWS\nThời gian: 8:30 AM – 5:00 PM, Thứ Hai, 17/11/2025\nĐịa điểm: Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh\nVai trò trong sự kiện: Người tham dự\nEvent 3 Tên sự kiện: AWS Well-Architected Security Pillar\nThời gian: 08:30 AM – 12:00 PM, 29/11/2025 — Buổi sáng\nĐịa điểm: Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh\nVai trò trong sự kiện: Người tham dự\n"
+},
+{
+	"uri": "http://localhost:1313/fcj-workshop2/vi/5-workshop/5.5-closed-loop-devsecops/",
+	"title": "Closed-loop-devsecops",
+	"tags": [],
+	"description": "",
+	"content": "DevSecOps Feedback Loop (Closed Cycle) Hệ thống tạo ra một vòng lặp DevSecOps khép kín: Dev commit code → GitLab ↓ CodePipeline chạy → CodeBuild quét → SonarQube phân tích ↓ Webhook → Lambda → SNS gửi email ↓ Dev nhận lỗi → Fix → Commit lại ↓ Quay lại vòng lặp\nLợi ích chính Tự động phát hiện bug và lỗ hổng bảo mật. Cảnh báo real-time giúp dev sửa ngay. Bảo đảm chất lượng code xuyên suốt vòng đời phát triển. Văn hóa DevSecOps được áp dụng thực tế: “Security shift-left”. Kết luận Pipeline đảm bảo một quy trình phát triển hiện đại, tự động, bảo mật và bền vững. Mỗi commit đều được phân tích nghiêm ngặt, giúp đội dev luôn duy trì chuẩn chất lượng cao.\n"
 },
 {
 	"uri": "http://localhost:1313/fcj-workshop2/vi/5-workshop/",
